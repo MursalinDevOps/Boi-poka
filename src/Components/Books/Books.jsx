@@ -12,7 +12,7 @@ export default function Books() {
     return (
         <div className='mb-20'>
             <h2 className="text-3xl md:text-4xl text-center font-bold mb-20">Books</h2>
-            <div className='grid md:grid-cols-2 gap-5 lg:grid-cols-3'>
+            <div className='grid md:grid-cols-2 gap-8 lg:grid-cols-3'>
                 {
                     books.map((book, idx) => <Book key={idx} book={book}></Book>)
                 }
