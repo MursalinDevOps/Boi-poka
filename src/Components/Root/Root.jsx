@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 
 export default function Root() {
   return (
-    <div className="md:container mx-auto">
+    <div className="container mx-auto">
       <NavBar></NavBar>
       <Outlet></Outlet>
       <Footer></Footer>
