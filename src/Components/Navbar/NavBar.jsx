@@ -4,13 +4,22 @@ export default function NavBar() {
     const links = <>
         {/* <li><a>Home</a></li> */}
 
-        <NavLink to='/'>Home</NavLink>
-        {/* <NavLink to='/listedBooks'>Listed Books</NavLink>
-        <NavLink to='/pagesToRead'>Pages to read</NavLink> */}
-        <NavLink to='/dashboard'>Dashboard</NavLink>
+
+        <li>
+            <NavLink to='/'>Home</NavLink>
+        </li>
+        <li>
+            <NavLink to='/listedBooks'>Listed Books</NavLink>
+        </li>
+        <li>
+            <NavLink to='/pagesToRead'>Pages to read</NavLink>
+        </li>
+        <li>
+            <NavLink to='/dashboard'>Dashboard</NavLink>
+        </li>
     </>
     return (
-        <nav className="navbar bg-base-100">
+        <nav className="navbar justify-between">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +42,7 @@ export default function NavBar() {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">The Boi Poka</a>
+                <a className="text-xl">The Boi Poka</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -41,8 +50,8 @@ export default function NavBar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-success text-white">Sign in</a>
-                <a className="btn btn-accent">Sign up</a>
+                <a className="btn btn-success mr-5 text-white">Sign in</a>
+                <a className=" btn btn-accent">Sign up</a>
             </div>
         </nav>
     )

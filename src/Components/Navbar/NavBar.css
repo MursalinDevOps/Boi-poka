@@ -1,10 +1,7 @@
-nav a.active{
-    background-color:#00ff00; ;
 
-}
-nav a{
-    border: 1px solid green;
+nav li a {
+    border: 1px solid;
     padding: 10px 30px;
     border-radius: 10px;
     margin-right: 20px;
-}
+} 
