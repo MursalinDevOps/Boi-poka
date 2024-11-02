@@ -6,12 +6,26 @@ import {
   RouterProvider,
 } from "react-router-dom"
 import Root from './Components/Root/Root';
+import ErrorPage from './Components/ErrorPage/ErrorPage.';
+import HomePage from './Components/HomePage/HomePage';
+import Dashboard from './Components/Dashboard/Dashboard';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>
+    element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
+    children:[
+      {
+        path:'/',
+        element:<HomePage></HomePage>
+      },
+      {
+        path:'/dashboard',
+        element:<Dashboard></Dashboard>
+      }
+    ]
   },
 ]);
 createRoot(document.getElementById('root')).render(
