@@ -57,6 +57,7 @@ export default function BookDetail() {
                     </div>
                     <div className="my-4">
                         <table>
+                            <tbody>
                             <tr>
                                 <td>Number of Pages :</td>
                                 <td className="font-semibold pl-10">{totalPages}</td>
@@ -73,6 +74,7 @@ export default function BookDetail() {
                                 <td>Rating :</td>
                                 <td className="font-semibold pl-10">{rating}</td>
                             </tr>
+                            </tbody>
                         </table>
                     </div>
                     {/* BUTTONS */}

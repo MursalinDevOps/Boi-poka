@@ -45,4 +45,4 @@ const getStoredWishlist = () => {
   }
 
 
-export {addToStoredReadList, addToStoredWishlist}
+export {addToStoredReadList, addToStoredWishlist, getStoredReadList, getStoredWishlist}
