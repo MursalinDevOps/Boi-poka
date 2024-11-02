@@ -42,7 +42,7 @@ export default function NavBar() {
                         {links}
                     </ul>
                 </div>
-                <a className="text-xl">The Boi Poka</a>
+                <a className="text-xl font-bold">The Boi Poka</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
