@@ -38,8 +38,8 @@ export default function ListedBooks() {
                     <summary className="btn m-1">Sort by
                     </summary>
                     <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                        <li><a>A-Z</a></li>
-                        <li><a>Z-A</a></li>
+                        <li><a>A - Z</a></li>
+                        <li><a>Z - A</a></li>
                     </ul>
                 </details>
             </div>
